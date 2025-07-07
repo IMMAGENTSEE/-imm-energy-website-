@@ -136,7 +136,7 @@ export async function sendContactEmail(formData: FormData) {
     return {
       success: false,
       message:
-        "Παρουσιάστηκε τεχνικό πρόβλημα. Παρακαλώ καλέστε στο 2310 451112 ή στείλτε email στο immenergy@hotmail.com.",
+        "Παρουσιάστηκε τεχνικό πρόβλημα. Παρακαλώ καλέστε στο 2310 451112 ή στείλτε email στο imm.energy@hotmail.com.",
     }
   }
 }
