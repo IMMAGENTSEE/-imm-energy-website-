@@ -866,7 +866,7 @@ export default function IMMEnergyWebsite() {
                         </div>
                         <div>
                           <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                          <p className="text-gray-600">immenergy@hotmail.com</p>
+                          <p className="text-gray-600">imm.energy@hotmail.com</p>
                           <p className="text-sm text-gray-500">Απαντάμε εντός 24 ωρών</p>
                         </div>
                       </div>
@@ -878,9 +878,9 @@ export default function IMMEnergyWebsite() {
                         <div>
                           <h4 className="font-semibold text-gray-900 mb-1">Διεύθυνση</h4>
                           <div className="text-gray-600">
-                            <p>ΖΗΡΓΑΝΟΥ 30</p>
-                            <p>55134 ΚΑΛΑΜΑΡΙΑ</p>
-                            <p>ΘΕΣΣΑΛΟΝΙΚΗ</p>
+                            <p>Ζηργάνου 30</p>
+                            <p>55134</p>
+                            <p>Θεσσαλονίκη</p>
                           </div>
                         </div>
                       </div>
@@ -1091,14 +1091,14 @@ export default function IMMEnergyWebsite() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-blue-400 flex-shrink-0" />
-                  <span>immenergy@hotmail.com</span>
+                  <span>imm.energy@hotmail.com</span>
                 </div>
                 <div className="flex items-start space-x-3">
                   <MapPin className="h-5 w-5 text-purple-400 flex-shrink-0 mt-1" />
                   <div>
-                    <div>ΖΗΡΓΑΝΟΥ 30</div>
-                    <div>55134 ΚΑΛΑΜΑΡΙΑ</div>
-                    <div>ΘΕΣΣΑΛΟΝΙΚΗ</div>
+                    <div>Ζηργάνου 30</div>
+                    <div>55134</div>
+                    <div>Θεσσαλονίκη</div>
                   </div>
                 </div>
               </div>

@@ -100,7 +100,7 @@ export async function sendContactEmail(formData: FormData) {
 
       const result = await resend.emails.send({
         from: "IMM Energy <onboarding@resend.dev>",
-        to: ["immenergy@hotmail.com"],
+        to: ["imm.energy@hotmail.com"],
         subject: `🔌 Νέα αίτηση από ${name}`,
         text: emailText,
         attachments,
