@@ -791,7 +791,7 @@ export default function IMMEnergyWebsite() {
 
                   <CardHeader className={`${offer.popular ? "pt-12" : "pt-6"} text-center`}>
                     <div
-                      className={`w-16 h-16 bg-gradient-to-br ${offer.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
+                      className={`w-16 h-16 bg-gradient-to-br ${offer.color} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 shadow-xl`}
                     >
                       <IconComponent className="h-8 w-8 text-white" />
                     </div>
@@ -835,7 +835,6 @@ export default function IMMEnergyWebsite() {
                 <MessageSquare className="w-4 h-4 mr-2" />
                 Επικοινωνία
               </Badge>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">Επικοινωνήστε Μαζ Επικοινωνία</h2>
               <h2 className="text-4xl font-bold text-gray-900 mb-4">Επικοινωνήστε Μαζί Μας</h2>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό
