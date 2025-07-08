@@ -319,142 +319,6 @@ export default function IMMEnergyWebsite() {
               )
             })}
           </div>
-        </div>
-      </section>
-
-      {/* Enhanced Blue & Yellow Tariffs Explanation Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <Badge className="mb-4 bg-gradient-to-r from-blue-500 to-yellow-500 text-white px-4 py-2">
-              <FileText className="w-4 h-4 mr-2" />
-              Τιμολόγια Ενέργειας
-            </Badge>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Τι είναι τα Μπλε & Κίτρινα Τιμολόγια;</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Κατανοήστε τη διαφορά μεταξύ των τιμολογίων για να επιλέξετε το καταλληλότερο για εσάς
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Blue Tariffs */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 bg-gradient-to-br from-blue-50 to-blue-100/50 relative overflow-hidden">
-              {/* Blue accent */}
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
-
-              <CardHeader className="text-center pb-6 pt-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                  <div className="text-white text-3xl font-bold">Μ</div>
-                </div>
-                <CardTitle className="text-3xl text-blue-800 mb-2 flex items-center justify-center">
-                  <div className="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
-                  Μπλε Τιμολόγια
-                </CardTitle>
-                <CardDescription className="text-blue-700 font-medium text-lg">
-                  Οικιακοί Πελάτες & Μικρές Επιχειρήσεις
-                </CardDescription>
-              </CardHeader>
-
-              <CardContent className="px-8 pb-8">
-                <div className="space-y-6">
-                  <div className="bg-white/80 rounded-2xl p-6 shadow-sm">
-                    <h4 className="font-bold text-blue-800 mb-4 flex items-center">
-                      <Zap className="w-5 h-5 mr-2" />
-                      Χαρακτηριστικά:
-                    </h4>
-                    <div className="space-y-3">
-                      {[
-                        "Σταθερή τιμή",
-                        "Χωρίς ρήτρα αναπροσαρμογής",
-                        "Ετήσια δέσμευση",
-                        "Απλούστερη τιμολόγηση",
-                        "Ιδανικό για σπίτια και επιχειρήσεις",
-                      ].map((feature, index) => (
-                        <div key={index} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                          <span className="text-gray-700">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-200">
-                    <h4 className="font-bold text-blue-800 mb-3 flex items-center">
-                      <Users className="w-5 h-5 mr-2" />
-                      Κατάλληλο για:
-                    </h4>
-                    <div className="grid grid-cols-2 gap-3">
-                      {["Σπίτια", "Διαμερίσματα", "Μικρά γραφεία", "Καταστήματα"].map((type, index) => (
-                        <div key={index} className="flex items-center space-x-2">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
-                          <span className="text-sm text-gray-700">{type}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Yellow Tariffs */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 bg-gradient-to-br from-yellow-50 to-yellow-100/50 relative overflow-hidden">
-              {/* Yellow accent */}
-              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-yellow-500 to-yellow-600"></div>
-
-              <CardHeader className="text-center pb-6 pt-8">
-                <div className="w-24 h-24 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
-                  <div className="text-white text-3xl font-bold">Κ</div>
-                </div>
-                <CardTitle className="text-3xl text-yellow-800 mb-2 flex items-center justify-center">
-                  <div className="w-4 h-4 bg-yellow-500 rounded-full mr-3"></div>
-                  Κίτρινα Τιμολόγια
-                </CardTitle>
-                <CardDescription className="text-yellow-700 font-medium text-lg">
-                  Εξοχικά, Κοινόχρηστα και Μεγάλες Επιχειρήσεις
-                </CardDescription>
-              </CardHeader>
-
-              <CardContent className="px-8 pb-8">
-                <div className="space-y-6">
-                  <div className="bg-white/80 rounded-2xl p-6 shadow-sm">
-                    <h4 className="font-bold text-yellow-800 mb-4 flex items-center">
-                      <BarChart3 className="w-5 h-5 mr-2" />
-                      Χαρακτηριστικά:
-                    </h4>
-                    <div className="space-y-3">
-                      {[
-                        "Χαμηλό ή μηδενικό πάγιο",
-                        "Ονομαστική τιμή",
-                        "Πολυπλοκότερη τιμολόγηση",
-                        "Κλιμακωτές τιμές",
-                        "Ρήτρα αναπροσαρμογής",
-                      ].map((feature, index) => (
-                        <div key={index} className="flex items-center space-x-3">
-                          <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                          <span className="text-gray-700">{feature}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="bg-yellow-500/10 rounded-2xl p-6 border border-yellow-200">
-                    <h4 className="font-bold text-yellow-800 mb-3 flex items-center">
-                      <Building className="w-5 h-5 mr-2" />
-                      Κατάλληλο για:
-                    </h4>
-                    <div className="grid grid-cols-2 gap-3">
-                      {["Εργοστάσια", "Μεγάλα γραφεία", "Ξενοδοχεία", "Βιομηχανίες"].map((type, index) => (
-                        <div key={index} className="flex items-center space-x-2">
-                          <CheckCircle className="w-4 h-4 text-yellow-600" />
-                          <span className="text-sm text-gray-700">{type}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
 
           {/* Savings Calculator */}
           <div className="mt-16 max-w-4xl mx-auto">
@@ -628,24 +492,141 @@ export default function IMMEnergyWebsite() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
 
-          {/* Call to Action */}
-          <div className="text-center mt-12">
-            <div className="bg-gradient-to-r from-blue-600 to-yellow-600 rounded-3xl p-8 max-w-3xl mx-auto text-white">
-              <h3 className="text-2xl font-bold mb-4">Έτοιμοι για την αλλαγή;</h3>
-              <p className="text-blue-100 mb-6">
-                Οι ειδικοί μας θα αναλύσουν τον λογαριασμό σας και θα σας προτείνουν την καλύτερη λύση!
-              </p>
-              <Button
-                size="lg"
-                className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold shadow-lg transform hover:scale-105 transition-all duration-300"
-                onClick={() => scrollToSection("contact")}
-              >
-                <MessageSquare className="mr-2 h-5 w-5" />
-                Δωρεάν Ανάλυση Λογαριασμού
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </div>
+      {/* Enhanced Blue & Yellow Tariffs Explanation Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-gradient-to-r from-blue-500 to-yellow-500 text-white px-4 py-2">
+              <FileText className="w-4 h-4 mr-2" />
+              Τιμολόγια Ενέργειας
+            </Badge>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Τι είναι τα Μπλε & Κίτρινα Τιμολόγια;</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Κατανοήστε τη διαφορά μεταξύ των τιμολογίων για να επιλέξετε το καταλληλότερο για εσάς
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* Blue Tariffs */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 bg-gradient-to-br from-blue-50 to-blue-100/50 relative overflow-hidden">
+              {/* Blue accent */}
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+
+              <CardHeader className="text-center pb-6 pt-8">
+                <div className="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                  <div className="text-white text-3xl font-bold">Μ</div>
+                </div>
+                <CardTitle className="text-3xl text-blue-800 mb-2 flex items-center justify-center">
+                  <div className="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
+                  Μπλε Τιμολόγια
+                </CardTitle>
+                <CardDescription className="text-blue-700 font-medium text-lg">
+                  Οικιακοί Πελάτες & Μικρές Επιχειρήσεις
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="px-8 pb-8">
+                <div className="space-y-6">
+                  <div className="bg-white/80 rounded-2xl p-6 shadow-sm">
+                    <h4 className="font-bold text-blue-800 mb-4 flex items-center">
+                      <Zap className="w-5 h-5 mr-2" />
+                      Χαρακτηριστικά:
+                    </h4>
+                    <div className="space-y-3">
+                      {[
+                        "Σταθερή τιμή",
+                        "Χωρίς ρήτρα αναπροσαρμογής",
+                        "Ετήσια δέσμευση",
+                        "Απλούστερη τιμολόγηση",
+                        "Ιδανικό για σπίτια και επιχειρήσεις",
+                      ].map((feature, index) => (
+                        <div key={index} className="flex items-center space-x-3">
+                          <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                          <span className="text-gray-700">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-500/10 rounded-2xl p-6 border border-blue-200">
+                    <h4 className="font-bold text-blue-800 mb-3 flex items-center">
+                      <Users className="w-5 h-5 mr-2" />
+                      Κατάλληλο για:
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {["Σπίτια", "Διαμερίσματα", "Μικρά γραφεία", "Καταστήματα"].map((type, index) => (
+                        <div key={index} className="flex items-center space-x-2">
+                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                          <span className="text-sm text-gray-700">{type}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Yellow Tariffs */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-0 bg-gradient-to-br from-yellow-50 to-yellow-100/50 relative overflow-hidden">
+              {/* Yellow accent */}
+              <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-yellow-500 to-yellow-600"></div>
+
+              <CardHeader className="text-center pb-6 pt-8">
+                <div className="w-24 h-24 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+                  <div className="text-white text-3xl font-bold">Κ</div>
+                </div>
+                <CardTitle className="text-3xl text-yellow-800 mb-2 flex items-center justify-center">
+                  <div className="w-4 h-4 bg-yellow-500 rounded-full mr-3"></div>
+                  Κίτρινα Τιμολόγια
+                </CardTitle>
+                <CardDescription className="text-yellow-700 font-medium text-lg">
+                  Εξοχικά, Κοινόχρηστα και Μεγάλες Επιχειρήσεις
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="px-8 pb-8">
+                <div className="space-y-6">
+                  <div className="bg-white/80 rounded-2xl p-6 shadow-sm">
+                    <h4 className="font-bold text-yellow-800 mb-4 flex items-center">
+                      <BarChart3 className="w-5 h-5 mr-2" />
+                      Χαρακτηριστικά:
+                    </h4>
+                    <div className="space-y-3">
+                      {[
+                        "Χαμηλό ή μηδενικό πάγιο",
+                        "Ονομαστική τιμή",
+                        "Πολυπλοκότερη τιμολόγηση",
+                        "Κλιμακωτές τιμές",
+                        "Ρήτρα αναπροσαρμογής",
+                      ].map((feature, index) => (
+                        <div key={index} className="flex items-center space-x-3">
+                          <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                          <span className="text-gray-700">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-yellow-500/10 rounded-2xl p-6 border border-yellow-200">
+                    <h4 className="font-bold text-yellow-800 mb-3 flex items-center">
+                      <Building className="w-5 h-5 mr-2" />
+                      Κατάλληλο για:
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {["Εργοστάσια", "Μεγάλα γραφεία", "Ξενοδοχεία", "Βιομηχανίες"].map((type, index) => (
+                        <div key={index} className="flex items-center space-x-2">
+                          <CheckCircle className="w-4 h-4 text-yellow-600" />
+                          <span className="text-sm text-gray-700">{type}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
